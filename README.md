@@ -1,5 +1,6 @@
-# The Lincoln Lawyer Intro Animation - CSS Project
+# The Lincoln Lawyer Intro Animation in CSS
 This project is a (mostly) CSS recreation of the opening animation for The Lincoln Lawyer. 
+
 The animation presents a dynamic title overlay against a moving map of Los Angeles, creating a cinematic feel with text cutout and blend effects. 
 
 ## Features
@@ -9,4 +10,4 @@ The animation presents a dynamic title overlay against a moving map of Los Angel
 
 
 ## Demo
-Open index.html in a web browser to see the animation in action.
+Open `index.html` in a web browser to see the animation in action.
