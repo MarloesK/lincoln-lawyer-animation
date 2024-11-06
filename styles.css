@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('static/map.jpg');
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    animation: move-bg 10s infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move-bg {
+   0% { background-position: 0% 0%; }
+  100% {background-position: 100% 100%;}
+}
+
+#container {
+    color: #fff;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    mix-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 2s ease, transform 4s ease, mix-blend-mode 1s linear;
+
+}
+
+h1 {
+    font-size: 16rem;
+    font-family: "Oswald";
+    text-align: left;
+    top: 50%;
+}
+
+span {
+    display: block;
+    text-align: left;
+    line-height: 1;
+}
+
+#the {
+    font-size: 5rem;
+}
+
+#container.show-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#container.change-color-font {
+    mix-blend-mode: revert;
+}

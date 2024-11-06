@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Lincoln Map</title>
+</head>
+
+<body>
+    <div id="background">
+        <div id="container">
+                <h1>
+                    <span id="the">THE</span>
+                    <span id="lincoln">LINCOLN</span>
+                    <span id="lawyer">LAWYER</span>
+                </h1>
+        </div>
+    </div>
+
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          document.getElementById('container').classList.add('show-overlay');
+        }, 2000);
+
+        setTimeout(function() {
+            document.getElementById('container').classList.add('change-color-font');
+        }, 5050);
+
+      };
+
+    </script>
+</body>
+</html>
